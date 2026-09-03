@@ -1,67 +1,71 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, Search, Heart } from "lucide-react";
 import "./Navbar.css";
 
 function Navbar() {
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-function toggleMenu() {
-setIsMenuOpen(!isMenuOpen);
+function closeMenu() {
+setIsMenuOpen(false);
 }
 
 return ( <nav className="navbar">
-{/* Logo */} <div className="logo">
-WANDERLUST </div>
 
 
-  {/* Desktop Navigation */}
+  <Link to="/" className="logo">
+    WANDERLUST
+  </Link>
+
   <div className="nav-links">
-    <a href="/">Home</a>
-    <a href="/explore">Explore</a>
-    <a href="/planner">Plan a Trip</a>
-    <a href="/saved">Saved</a>
+    <Link to="/">Home</Link>
+    <Link to="/explore">Explore</Link>
+    <Link to="/planner">Plan a Trip</Link>
+    <Link to="/saved">Saved</Link>
   </div>
 
-  {/* Right Side Icons */}
   <div className="nav-actions">
-    <button className="icon-button" aria-label="Search">
+
+    <Link to="/explore" className="icon-button" aria-label="Search">
       <Search size={20} />
-    </button>
+    </Link>
 
-    <button className="icon-button saved-button" aria-label="Saved places">
+    <Link to="/saved" className="icon-button saved-button">
       <Heart size={20} />
-    </button>
+    </Link>
 
-    {/* Mobile Menu Button */}
     <button
       className="menu-button"
-      onClick={toggleMenu}
+      onClick={() => setIsMenuOpen(!isMenuOpen)}
       aria-label="Toggle menu"
     >
       {isMenuOpen ? <X size={25} /> : <Menu size={25} />}
     </button>
+
   </div>
 
-  {/* Mobile Navigation */}
   {isMenuOpen && (
     <div className="mobile-menu">
-      <a href="/" onClick={toggleMenu}>
+
+      <Link to="/" onClick={closeMenu}>
         Home
-      </a>
+      </Link>
 
-      <a href="/explore" onClick={toggleMenu}>
+      <Link to="/explore" onClick={closeMenu}>
         Explore
-      </a>
+      </Link>
 
-      <a href="/planner" onClick={toggleMenu}>
+      <Link to="/planner" onClick={closeMenu}>
         Plan a Trip
-      </a>
+      </Link>
 
-      <a href="/saved" onClick={toggleMenu}>
+      <Link to="/saved" onClick={closeMenu}>
         Saved Places
-      </a>
+      </Link>
+
     </div>
   )}
+
 </nav>
 
 

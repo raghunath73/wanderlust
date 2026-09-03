@@ -9,72 +9,63 @@ Wanderlust is a modern AI-powered travel planning web application that helps use
 ## ✨ Features
 
 ### 🌎 Explore Destinations
-
 Discover beautiful destinations from around the world with detailed information and stunning visuals.
 
 ### 🔍 Search & Filter
-
 Easily search for destinations and filter them based on different travel categories and interests.
 
 ### 📍 Destination Details
-
 Each destination includes:
 
-* Country and location information
-* Destination description
-* Travel category
-* Quick travel information
-* Famous places to visit
+- Country and location information
+- Destination description
+- Travel category
+- Quick travel information
+- Famous places to visit
 
 ### 🏛️ Famous Places
-
 Explore popular attractions and must-visit locations for every destination.
 
 ### 🌤️ Live Weather
-
 Get current weather information for destinations, including:
 
-* Temperature
-* Feels-like temperature
-* Humidity
-* Wind speed
-* Weather conditions
+- Temperature
+- Feels-like temperature
+- Humidity
+- Wind speed
+- Weather conditions
 
 ### ❤️ Save Destinations
-
 Save your favorite destinations and create your personal travel wishlist.
 
 Saved destinations are stored using **LocalStorage**, so they remain available even after refreshing the browser.
 
 ### 🤖 Wanderlust AI Assistant
-
 Ask the AI assistant questions about:
 
-* Travel destinations
-* Famous places
-* Best time to visit
-* Budget travel
-* Food recommendations
-* Travel tips
-* Cultural experiences
-* Adventure activities
+- Travel destinations
+- Famous places
+- Best time to visit
+- Budget travel
+- Food recommendations
+- Travel tips
+- Cultural experiences
+- Adventure activities
 
 ### 🗺️ AI Trip Planner
-
 Generate a personalized day-by-day travel itinerary based on:
 
-* 📍 Destination
-* 📅 Number of days
-* 💰 Budget
-* 🎒 Travel style
+- 📍 Destination
+- 📅 Number of days
+- 💰 Budget
+- 🎒 Travel style
 
 ### 📱 Responsive Design
-
 The application is designed to work smoothly on:
 
-* 💻 Desktop
-* 📱 Mobile
-* 📟 Tablet
+- 💻 Desktop
+- 📱 Mobile
+- 📟 Tablet
 
 ---
 
@@ -82,35 +73,35 @@ The application is designed to work smoothly on:
 
 ### Frontend
 
-* React.js
-* JavaScript
-* HTML5
-* CSS3
+- React.js
+- JavaScript
+- HTML5
+- CSS3
 
 ### Routing
 
-* React Router DOM
+- React Router DOM
 
 ### Icons
 
-* Lucide React
+- Lucide React
 
 ### AI Integration
 
-* Google Gemini API
-* `@google/genai`
+- Google Gemini API
+- `@google/genai`
 
 ### Weather
 
-* OpenWeather API
+- OpenWeather API
 
 ### Storage
 
-* Browser LocalStorage
+- Browser LocalStorage
 
 ### Build Tool
 
-* Vite
+- Vite
 
 ---
 
@@ -169,8 +160,8 @@ Follow these steps to install and run the project on your computer.
 
 Make sure you have the following installed:
 
-* **Node.js**
-* **npm**
+- **Node.js**
+- **npm**
 
 You can check whether they are installed by running:
 
@@ -393,11 +384,11 @@ Wanderlust uses the OpenWeather API to display weather information for destinati
 
 The weather section provides:
 
-* 🌡️ Temperature
-* 🤔 Feels-like temperature
-* 💧 Humidity
-* 💨 Wind speed
-* ☁️ Weather conditions
+- 🌡️ Temperature
+- 🤔 Feels-like temperature
+- 💧 Humidity
+- 💨 Wind speed
+- ☁️ Weather conditions
 
 ---
 
@@ -427,17 +418,17 @@ Then display them in the README:
 
 Some features that can be added in the future:
 
-* 🌍 More destinations
-* 🗺️ Interactive maps
-* ✈️ Flight search integration
-* 🏨 Hotel recommendations
-* 💰 Currency converter
-* 📍 User location detection
-* 🔐 User authentication
-* ☁️ Cloud database
-* 👥 User accounts
-* 🌐 Multi-language support
-* ⭐ Destination ratings and reviews
+- 🌍 More destinations
+- 🗺️ Interactive maps
+- ✈️ Flight search integration
+- 🏨 Hotel recommendations
+- 💰 Currency converter
+- 📍 User location detection
+- 🔐 User authentication
+- ☁️ Cloud database
+- 👥 User accounts
+- 🌐 Multi-language support
+- ⭐ Destination ratings and reviews
 
 ---
 
@@ -445,18 +436,18 @@ Some features that can be added in the future:
 
 Through this project, I gained experience with:
 
-* React component architecture
-* React Router
-* React Hooks
-* API integration
-* Environment variables
-* Gemini AI integration
-* Weather API integration
-* LocalStorage
-* Responsive web design
-* Error handling
-* Loading states
-* Building reusable components
+- React component architecture
+- React Router
+- React Hooks
+- API integration
+- Environment variables
+- Gemini AI integration
+- Weather API integration
+- LocalStorage
+- Responsive web design
+- Error handling
+- Loading states
+- Building reusable components
 
 ---
 

@@ -418,7 +418,7 @@ screenshots/
 Then display them in the README:
 
 ```markdown
-![Home Page](./screenshots/home.png)
+![Home Page](https://github.com/raghunath73/wanderlust/blob/main/screenshots/home.png)
 ```
 
 ---

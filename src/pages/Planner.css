@@ -1,0 +1,198 @@
+.planner-page {
+min-height: 100vh;
+background: #f5f3ee;
+}
+
+.planner-hero {
+padding: 100px 8%;
+background: #24483d;
+color: white;
+}
+
+.planner-hero h1 {
+font-size: clamp(3.5rem, 9vw, 9rem);
+
+line-height: 0.82;
+
+font-weight: 500;
+
+margin: 25px 0 35px;
+}
+
+.planner-hero > p:last-child {
+max-width: 500px;
+
+line-height: 1.7;
+
+color: rgba(255, 255, 255, 0.75);
+}
+
+.planner-content {
+max-width: 1000px;
+
+margin: auto;
+
+padding: 80px 30px 120px;
+}
+
+.planner-form {
+background: white;
+
+padding: 50px;
+
+box-shadow:
+0 15px 50px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+display: flex;
+
+flex-direction: column;
+
+gap: 12px;
+
+margin-bottom: 30px;
+}
+
+.form-group label {
+font-size: 0.7rem;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+
+color: #24483d;
+}
+
+.form-group input,
+.form-group select {
+padding: 17px;
+
+border: 1px solid #ddd;
+
+font-family: inherit;
+
+font-size: 1rem;
+
+background: white;
+}
+
+.form-row {
+display: grid;
+
+grid-template-columns: 1fr 1fr;
+
+gap: 25px;
+}
+
+.generate-button {
+width: 100%;
+
+padding: 20px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+gap: 12px;
+
+border: none;
+
+background: #24483d;
+
+color: white;
+
+font-size: 0.75rem;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+
+cursor: pointer;
+
+transition: opacity 0.3s;
+}
+
+.generate-button:hover {
+opacity: 0.9;
+}
+
+.generate-button:disabled {
+opacity: 0.6;
+
+cursor: not-allowed;
+}
+
+.planner-error {
+margin-top: 25px;
+
+padding: 20px;
+
+background: #ffe5e5;
+
+color: #a00000;
+}
+
+.itinerary-result {
+margin-top: 60px;
+
+background: white;
+
+padding: 50px;
+
+box-shadow:
+0 15px 50px rgba(0, 0, 0, 0.08);
+}
+
+.itinerary-title {
+display: flex;
+
+align-items: center;
+
+gap: 15px;
+
+padding-bottom: 30px;
+
+border-bottom: 1px solid #ddd;
+}
+
+.itinerary-title h2 {
+font-size: 3rem;
+
+font-weight: 500;
+
+margin-top: 10px;
+}
+
+.itinerary-content {
+padding-top: 35px;
+
+white-space: pre-wrap;
+
+line-height: 1.8;
+
+color: #444;
+}
+
+@media (max-width: 600px) {
+
+.planner-hero {
+padding: 90px 5%;
+}
+
+.planner-content {
+padding: 50px 15px;
+}
+
+.planner-form,
+.itinerary-result {
+padding: 25px;
+}
+
+.form-row {
+grid-template-columns: 1fr;
+}
+
+}

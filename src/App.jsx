@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import TravelChatbot from "./components/TravelChatbot";
 
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";
@@ -15,14 +16,30 @@ return (
 
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/explore" element={<Explore />} />
+
+    <Route
+      path="/explore"
+      element={<Explore />}
+    />
+
     <Route
       path="/destination/:id"
       element={<DestinationDetails />}
     />
-    <Route path="/planner" element={<Planner />} />
-    <Route path="/saved" element={<Saved />} />
+
+    <Route
+      path="/planner"
+      element={<Planner />}
+    />
+
+    <Route
+      path="/saved"
+      element={<Saved />}
+    />
   </Routes>
+
+  {/* 🤖 AI CHATBOT */}
+  <TravelChatbot />
 </>
 
 

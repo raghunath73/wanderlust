@@ -415,11 +415,14 @@ screenshots/
 └── chatbot.png
 ```
 
-Then display them in the README:
 
-```markdown
-![Home Page](https://github.com/raghunath73/wanderlust/blob/main/screenshots/home.png)
-```
+![Preview 1](https://github.com/raghunath73/wanderlust/blob/main/screenshots/home.png)
+
+![Preview 2](https://github.com/raghunath73/MultiLanguageServer/blob/main/images/Screenshot2.png)
+
+![Preview 3](https://github.com/raghunath73/MultiLanguageServer/blob/main/images/Screenshot3.png)
+
+![Preview 4](https://github.com/raghunath73/MultiLanguageServer/blob/main/images/Screenshot4.png)
 
 ---
 

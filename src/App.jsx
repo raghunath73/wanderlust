@@ -1,4 +1,7 @@
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import FeaturedDestinations from "./components/FeaturedDestinations";
+
 import "./App.css";
 
 function App() {
@@ -7,8 +10,9 @@ return (
 
 
   <main>
-    <h1>WANDERLUST</h1>
-    <p>Explore the world differently.</p>
+    <Hero />
+
+    <FeaturedDestinations />
   </main>
 </>
 

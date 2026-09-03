@@ -1,0 +1,116 @@
+.featured-destinations {
+padding: 130px 8%;
+
+background: #f5f3ee;
+}
+
+.featured-header {
+display: flex;
+
+justify-content: space-between;
+
+align-items: flex-end;
+
+gap: 50px;
+
+margin-bottom: 80px;
+}
+
+.section-label {
+font-size: 0.7rem;
+
+font-weight: 700;
+
+letter-spacing: 3px;
+
+color: #24483d;
+
+margin-bottom: 20px;
+}
+
+.featured-header h2 {
+font-size: clamp(2.8rem, 5vw, 5.5rem);
+
+line-height: 0.95;
+
+font-weight: 500;
+
+letter-spacing: -2px;
+}
+
+.featured-description {
+max-width: 350px;
+
+color: #666;
+
+line-height: 1.7;
+
+font-size: 1rem;
+}
+
+/* GRID */
+
+.destinations-grid {
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 35px;
+}
+
+/* Make the design more editorial */
+
+.destination-card:nth-child(2) {
+margin-top: 100px;
+}
+
+.destination-card:nth-child(5) {
+margin-top: 100px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+.destinations-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.destination-card:nth-child(2),
+.destination-card:nth-child(5) {
+margin-top: 0;
+}
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+.featured-destinations {
+padding: 80px 5%;
+}
+
+.featured-header {
+flex-direction: column;
+
+
+align-items: flex-start;
+
+gap: 30px;
+
+margin-bottom: 50px;
+
+
+}
+
+.featured-header h2 {
+letter-spacing: -1px;
+}
+
+.destinations-grid {
+grid-template-columns: 1fr;
+
+
+gap: 50px;
+
+
+}
+}

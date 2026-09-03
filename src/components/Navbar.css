@@ -1,0 +1,135 @@
+.navbar {
+width: 100%;
+height: 80px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding: 0 5%;
+
+background: #f5f3ee;
+color: #171717;
+
+position: relative;
+z-index: 100;
+}
+
+/* LOGO */
+
+.logo {
+font-size: 1.1rem;
+font-weight: 700;
+letter-spacing: 3px;
+}
+
+/* DESKTOP NAVIGATION */
+
+.nav-links {
+display: flex;
+align-items: center;
+gap: 35px;
+}
+
+.nav-links a {
+font-size: 0.9rem;
+font-weight: 500;
+
+transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+opacity: 0.6;
+}
+
+/* RIGHT SIDE */
+
+.nav-actions {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+/* ICON BUTTONS */
+
+.icon-button,
+.menu-button {
+width: 42px;
+height: 42px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: transparent;
+border: none;
+
+color: #171717;
+
+border-radius: 50%;
+
+transition: background 0.3s ease;
+}
+
+.icon-button:hover,
+.menu-button:hover {
+background: rgba(0, 0, 0, 0.06);
+}
+
+/* MOBILE MENU BUTTON */
+
+.menu-button {
+display: none;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+position: absolute;
+
+top: 80px;
+left: 0;
+
+width: 100%;
+
+display: flex;
+flex-direction: column;
+
+padding: 30px 5%;
+
+background: #f5f3ee;
+
+border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.mobile-menu a {
+padding: 18px 0;
+
+font-size: 1.2rem;
+
+border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+.nav-links {
+display: none;
+}
+
+.menu-button {
+display: flex;
+}
+
+.saved-button {
+display: none;
+}
+
+.navbar {
+height: 70px;
+}
+
+.mobile-menu {
+top: 70px;
+}
+}

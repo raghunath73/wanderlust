@@ -8,6 +8,8 @@ Clock,
 } from "lucide-react";
 
 import destinations from "../data/destinations";
+import Weather from "../components/Weather";
+import FamousPlaces from "../components/FamousPlaces";
 import "./DestinationDetails.css";
 
 function DestinationDetails() {
@@ -120,15 +122,8 @@ return ( <main className="destination-details">
       <br />
       DISCOVERING
     </h2>
-
-    <div className="places-placeholder">
-
-      <p>
-        Famous places for {destination.name}
-        will be added here next.
-      </p>
-
-    </div>
+    <Weather city={destination.name} />
+    <FamousPlaces places={destination.famousPlaces} />
 
   </section>
 
